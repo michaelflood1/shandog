@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #cecbcb;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(187, 152, 152);
+    padding: 10px;
+    margin: 10px;   
+}
+h2 {
+    color: blue;
+    text-align: left;
+    text-decoration: underline;
+    text-underline-position: below;
+    text-decoration: underline;
+    padding: 10px;
+    padding-top: 30px;
+    margin: 10px;
+
+}
+h3 {
+    color: green;
+    text-underline-position: below;
+    text-decoration: underline;
+    
+    
+}
+h4 {  color: green;
+    text-underline-position: below;
+    text-decoration: underline;
+}
+p {
+    text-align: center;
+    
+    font-size: 20px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    max-width: 50%;
+    overflow: hidden;
+    word-wrap: break-word;
+
+
+}
+img {
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+div.contact {
+
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    margin: 10px;
+    padding: 10px;
+    
+    
+}
+div.rates {
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    left : 30%;
+    margin: 10px;
+    padding: 10px;
+    
+}
+#rates {
+    line-height: 30px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+#contact {
+    line-height: 30px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
