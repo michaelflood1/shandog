@@ -47,45 +47,57 @@ p {
 
 }
 img {
-    z-index: -1;
+   
     position: absolute;
     top: 20%;
     left: 55%;
     width: 50%;
     height: 80%;
     object-fit: cover;
-    opacity: 0.5;
-}
-div.contact {
+    opacity: 0.8;
+}    
 
-    text-align: left;
-    font-size: 20px;
-    position: absolute;
-    bottom: 5%;
-    margin: 10px;
+
+
+    
+
+
+.row {  
+    display: flex;
+    max-width: 50%;
     padding: 10px;
-    
-    
-}
-div.rates {
-    text-align: left;
-    font-size: 20px;
-    position: absolute;
-    bottom: 5%;
-    left : 30%;
     margin: 10px;
-    padding: 10px;
     
-}
-#rates {
-    line-height: 30px;
-    background-color: white;
-    border: 2px solid black;
+  }
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 70% ;
+
+  }
+.column2 {
+    flex: 50%;
+     flex-wrap: wrap;
+    max-width: 30%;
+  }
+  #rates {
+    background-color: white;    
+    max-width: fit-content;
     color: black;
-}
-#contact {
-    line-height: 30px;
-    background-color: white;
-    border: 2px solid black;
+    font-size: 20px;
+    overflow: wrap;
+    text-overflow: wrap;
+  }
+  #contact {
+    
+    background-color: white; 
+    background-overflow: wrap;   
+    max-width: fit-content;
     color: black;
-}
+    font-size: 20px;
+    overflow: wrap;
+    text-overflow: wrap;
+  }
