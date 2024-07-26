@@ -20,7 +20,7 @@ body {
 }
 .headshot {
     border : 1px solid black;
-    padding : 10px;
+    padding: 10px;
     margin : 10px;
     max-height: fit-content;
     display:   flex;
@@ -29,9 +29,11 @@ body {
     align-items: center;
     background-color: var(--fifth-bg-color);
     font: 1em sans-serif;
-    flex-grow: 1;
-    font-weight: 200;
+    flex-grow: 0;
+    font-weight: bold;
     font-style: normal;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 1px;
     border-radius: 10px;
 }
 @media screen and (max-width: 1344px) {
@@ -90,28 +92,36 @@ body {
     max-height: 200px;
     align-self: self-start;
     margin: auto;
-    margin-top: 10px; ;
-    margin-bottom: 0;
+    
+    
 
 }
 .headshot #headshot {
     text-align: center;
-    margin: auto;
-    
+    margin-top: auto;
+    margin-bottom: auto;
     overflow: wrap;
-    max-width: 200px;
+    max-width: 34vw;
+    line-height: 1.5;
 }
 .intro {
     border : 1px solid black;
-    padding : 10px;
+    padding: 10px;
     margin : 10px;
-    max-height: fit-content;
+    
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     flex-grow: 1;
     background-color: var(--fifth-bg-color);
+    border-radius: 10px;
+    max-width: 40vw;
+    line-height: 2em;
+    font-size: larger;
+    font-style: normal;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 1px;
     border-radius: 10px;
     
 }
@@ -214,7 +224,20 @@ ul {
     align-self: right;
     flex-grow: 1;
     flex-shrink: 1;
-    
+    word-wrap: normal;
+    line-break: normal;
     background-color: var(--fifth-bg-color);
     border-radius: 10px;
+    
+}
+.lastli {
+    background: none;
+    border: none;
+    padding: auto;
+    margin: auto;
+    
+    --webkit-text-stroke-color: black;
+    font-weight: bold;
+   
+    
 }
