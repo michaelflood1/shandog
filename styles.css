@@ -59,7 +59,7 @@ body {
     word-break: keep-all;
     line-break: strict;
     line-height: 1.5;
-    flex-grow: 1;
+    flex-grow: 0;
     
     font-style: normal;
     border-radius: 10px;
@@ -70,16 +70,40 @@ body {
 #italic {
     font-style: italic;
 }
-@media screen and (max-width: 1498px) {
+@media screen and (max-width: 1527px) {
    
-
-    .headshot {
-        order: 1;
+    button {
+        transform: scale(0.5);
     }
+        
+    #prev {
+            position: absolute;
+            left: -10px; /* Position on the left side */
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        
+        
+    #next {
+            position: absolute;
+            right: 0px; /* Position on the right side */
+        }
+    
+    .headshot {
+        order: 5;
+        
+    }
+
     .container {
         order: 2;
-        flex-grow: 0;
+        flex-grow: 1;
+        padding: 0px;
+        margin: 0px;
+       
+        
     }
+    
     .igcontainer {
         order: 5;
         display: flex;
@@ -125,8 +149,11 @@ body {
         order: 4;
     }
 }
+@media screen and (max-width: 768px) { body { overflow-x: hidden; } } 
 
-
+.headshot {
+    flex-grow: 1;
+}
 .headshot img {
     max-height: 200px;
     align-self: self-start;
@@ -164,12 +191,13 @@ body {
     border-bottom: 2px solid black;
     padding: 10px;
     margin:  10px;
+    max-width: fit-content;
     max-height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex-grow: 0;
     border-radius: 10px;
     line-height: 2;
     font-size: 15pt;
@@ -178,13 +206,13 @@ body {
 .intro #intro {
     text-align: left;
     overflow: wrap;
-    max-width: 50vw;
+    max-width: 800px;
     
 }
 
 .reviews {
     flex-grow: 1;
-    font-size: 25pt;
+    font-size: 20pt;
     width: 100%;
     border-radius: 10px;
     background-size: cover;
