@@ -6,6 +6,8 @@
     --fifth-bg-color : #cfe0d585;
     --sixth-bg-color : #d0ddd400;
     --seventh-bg-color : #cfe0d5a1;
+    --font: 'poppins', sans-serif;
+    --header-font: 'georgia', serif;
 }
 
 body::before {
@@ -29,8 +31,9 @@ body {
     display : flex;
     flex-direction : row;
      flex-wrap : wrap; 
+    font-family: var(--font);
+   
     
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     -webkit-text-stroke-color: var(--main-bg-color);
     -webkit-text-stroke-width: 0.1px;
    
@@ -39,10 +42,14 @@ body {
        
 }
 
+
 #shannon {
     font-size: x-large;
     font-weight: bold;
     font-style: normal;
+    font-family: var(--header-font);
+    margin: 0;
+    padding: 0;
    
 }
 .headshot {
@@ -60,17 +67,25 @@ body {
     line-break: strict;
     line-height: 1.5;
     flex-grow: 0;
-    
+    font-family: var(--font);
     font-style: normal;
     border-radius: 10px;
 }
+#headshot {
+    font-family: var(--font);
+}
 #bold {
-    font-weight: bold;
+    font-weight: bolder;
+    
+    font-family: var(--header-font);
+    
 }
 #italic {
     font-style: italic;
+    font-family: var(--font);
+    
 }
-@media screen and (max-width: 1527px) {
+@media screen and (max-width: 1565px) {
    
     button {
         transform: scale(0.5);
@@ -91,21 +106,26 @@ body {
         }
     
     .headshot {
-        order: 5;
+        order: 1;
         
     }
 
     .container {
-        order: 2;
+        order: 3;
         flex-grow: 1;
         padding: 0px;
         margin: 0px;
+       .intro #intro {
        
+        overflow: wrap;
+        max-width: 100%;
+        font-family: var(--font);
+       }
         
     }
     
     .igcontainer {
-        order: 5;
+        order: 2;
         display: flex;
         justify-content: center; 
         align-items: center; 
@@ -136,6 +156,7 @@ body {
     #ig {
         text-align: center; /* Centers text horizontally */
         background: none;
+        margin-bottom: 15px;
         
     }
 
@@ -143,10 +164,10 @@ body {
     
     
     .box {
-        order: 3;
+        order: 4;
     }
     .last {
-        order: 4;
+        order: 5;
     }
 }
 @media screen and (max-width: 768px) { body { overflow-x: hidden; } } 
@@ -191,11 +212,12 @@ body {
 }
 .headshot #headshot {
     text-align: center;
-    margin: auto;
-    
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
     
     overflow: wrap;
-    max-width: 200px;
+    max-width: 240px;
 }
 .container {
     display: flex;
@@ -205,7 +227,7 @@ body {
     overflow: hidden;
     background-color: var(--fifth-bg-color);
     background-size: contain;
-   
+    font-family: var(--font);
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
@@ -227,13 +249,22 @@ body {
     flex-grow: 0;
     border-radius: 10px;
     line-height: 2;
-    font-size: 15pt;
+    font-size: 20pt;
+    font-weight: bolder;
+    font-family: var(--header-font) ;
+
     
 }
 .intro #intro {
     text-align: left;
     overflow: wrap;
     max-width: 800px;
+    font-family: var(--font);
+    font-size: 15pt;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    text-indent: 15px;
     
 }
 
@@ -252,15 +283,18 @@ body {
     text-align: center; /* Center text within the elements */
     position: relative;
     overflow: hidden;
+    font-family: var(--font);
    
     
 }
 
 .reviews > button {
     margin: 10px;
+    font-family: var(--font);
 }
 .reviews span {
     font-style: italic;
+    font-family: var(--header-font);
 }
 #prev, #next {
     background-color: transparent;
@@ -300,7 +334,7 @@ body {
 #greg {
     
     
-    visibility: hidden;
+    visibility: visible;
     display: none;
     z-index: -1;
     margin-top: 10px;
@@ -312,6 +346,7 @@ body {
     align-content: center;
     margin: 10px;
     width: 100%;
+    font-family: var(--font);
 }
 
 #jeff {
@@ -327,9 +362,10 @@ body {
     align-content: center;
     margin: 10px;
     width: 100%;
+    font-family: var(--font);
 }
 #sarah {
-    visibility: visible;
+    visibility: hidden;
     display: inline-block;
     z-index: 1;
     margin-top: 10px;
@@ -341,6 +377,7 @@ body {
     align-content: center;
     margin: 10px;
     width: 100%;
+    font-family: var(--font);
     
     
 }
@@ -359,14 +396,18 @@ body {
     -webkit-text-stroke-color: black;
     border-radius: 10px;
     opacity: 1;
+    font-family: var(--font);
 
 
     
     p {
         text-align: center;
         font-size: 20pt;
-        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
         
+        font-family: var(--header-font);
+
         
     }
 
@@ -386,7 +427,7 @@ body {
     flex-grow: 1;
     flex-shrink: 1;
     min-width: 86vw;
-    
+    font-family: var(--font);
     
 }
 
@@ -398,6 +439,7 @@ h1 {
     padding: 10px;
     margin: 10px;
     font-size: 20pt;
+    font-family: var(--header-font);
 }
  li {
     padding: 5px; 
@@ -415,6 +457,7 @@ h1 {
     font-style: normal;
     background-color: var(--fifth-bg-color);
     border-radius: 50px;
+    font-family: var(--font);
 }
 
 ul {
@@ -422,27 +465,18 @@ ul {
     padding: 5px; 
     margin: 015px; 
     font-size: 15pt;
-    
-    
-   
-    
-    
-    
+    font-family: var(--font);
     background-color: var(--fifth-bg-color);
     border-radius: 10px;
-
-   
-   
-    
+    font-family: var(--font);
     
 }
 .last {
    
-    padding : 10px;
-    margin-top: 5px;
+  
     
     max-height: fit-content;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -453,16 +487,18 @@ ul {
     line-break: normal;
     background-color: var(--fifth-bg-color);
     border-radius: 10px;
+    font-family: var(--font);
     
 }
 .lastli {
     background: none;
     border: none;
-    padding: auto;
-    margin: auto;
+    padding: 0px;
+    
     
     --webkit-text-stroke-color: black;
     font-weight: bold;
+    font-family: var(--header-font);
    
     
 }
