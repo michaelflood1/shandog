@@ -478,7 +478,7 @@ li {
     text-decoration: double underline;
 }
 
-@media screen and (max-width: 1589px) {
+@media screen and (max-width: 1606px) {
    
     button {
         transform: scale(0.5);
