@@ -560,8 +560,16 @@ li {
    
     
 }
+@media screen and (min-width: 1624px) and (max-width: 1700px) {
+    .headshot {
+        img {
+        transform: scale(0.75);
+        }
+    }
+    
+}
 
-@media screen and (max-width: 1606px) {
+@media screen and (max-width: 1623px) {
    
     button {
         transform: scale(0.5);
